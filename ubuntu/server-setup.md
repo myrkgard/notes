@@ -13,6 +13,8 @@
 ## Configure firewall
 - sudo ufw allow 22
 - sudo ufw allow 52342
+- sudo ufw allow 80
+- sudo ufw allow 443 
 - sudo ufw enable
 
 ## Configure sshd
@@ -31,3 +33,12 @@
 ## Set up docker
 - Install docker
 - Enable docker for user
+- Login to ghcr.io
+
+## Clone repo that contains the system's docker-compose file
+- git clone https://github.com/myrkgard/pw.git
+
+## Run system
+- cd pw/
+- docker-compose up
+
