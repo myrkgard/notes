@@ -10,25 +10,19 @@
 - sudo usermod -aG adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev,lxd $USER
 - check success with: id $USER
 
-## Configure firewall
-- sudo ufw allow 22
-- sudo ufw allow 52342
-- sudo ufw allow 80
-- sudo ufw allow 443 
-- sudo ufw enable
-
-## Configure sshd
-- sudo nano /etc/ssh/sshd_config
-- ```Port 52342```
-- reboot
-
 ## Optional: delete default user
 * delete default user 'ubuntu'
 * sudo userdel ubuntu 
 * sudo rm -R /home/ubuntu/
 
-## Close default ssh port
-- sudo ufw deny 22 
+## Configure sshd
+- sudo nano /etc/ssh/sshd_config
+- ```Port 52342```
+
+## Configure firewall
+- wget firewall-setup.sh
+- chmod +x firewall-setup.sh
+- sudo ./firewall-setup
 
 ## Set up docker
 - Install docker
