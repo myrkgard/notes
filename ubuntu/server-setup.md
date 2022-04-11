@@ -23,6 +23,7 @@
 - wget firewall-setup.sh
 - chmod +x firewall-setup.sh
 - sudo ./firewall-setup
+- ssh connection will be lost after this, server will reboot
 
 ## Set up docker
 - Install docker
