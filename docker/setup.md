@@ -14,3 +14,6 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 (Reboot if it still asks for root rights.)
+
+## Log in to ghcr.io with personal access token (PAT)
+- docker login ghcr.io -u $USER -p $PAT
