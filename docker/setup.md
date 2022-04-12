@@ -16,4 +16,4 @@ rebbot
 ```
 
 ## Log in to ghcr.io with personal access token (PAT)
-- docker login ghcr.io -u $USER -p $PAT
+- docker login ghcr.io -u $GITHUB_USER -p $PAT
