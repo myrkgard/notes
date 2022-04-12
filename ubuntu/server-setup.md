@@ -42,10 +42,5 @@ port = 52342
 - Enable docker for user
 - Login to ghcr.io
 
-## Clone repo that contains the system's docker-compose file
-- git clone https://github.com/myrkgard/pw.git
-
-## Run system
-- cd pw/
-- docker-compose up
+## Install docker containers from ghcr.io
 
