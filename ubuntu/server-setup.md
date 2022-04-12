@@ -26,6 +26,17 @@
 - sudo ./firewall-setup
 - ssh connection will be lost after this, server will reboot
 
+## Set up fail2ban
+- sudo apt install fail2ban
+- create config: sudo nano /etc/fail2ban/jail.local
+- with this content:
+```
+[ssh]
+enabled = true
+port = 52342
+```
+- Restart fail2ban: ```/etc/init.d/fail2ban restart```
+
 ## Set up docker
 - Install docker
 - Enable docker for user
