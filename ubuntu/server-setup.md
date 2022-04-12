@@ -13,7 +13,7 @@
 ## Optional: delete default user
 * delete default user 'ubuntu'
 * sudo userdel ubuntu 
-* sudo rm -R /home/ubuntu/
+* sudo rm -rf /home/ubuntu/
 
 ## Configure sshd
 - sudo nano /etc/ssh/sshd_config
