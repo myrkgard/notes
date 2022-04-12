@@ -20,7 +20,8 @@
 - ```Port 52342```
 
 ## Configure firewall
-- wget firewall-setup.sh
+- git clone https://github.com/myrkgard/notes.git
+- cd /notes/ubuntu/
 - chmod +x firewall-setup.sh
 - sudo ./firewall-setup
 - ssh connection will be lost after this, server will reboot
